@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Форма заявки</title>
+    <style>
+        /* Основные стили */
+        body {
+            font-family: 'Arial', sans-serif;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            margin: 0;
+            padding: 0;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: #333;
+        }
+
+        .container {
+            text-align: center;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+            padding: 40px;
+            max-width: 600px;
+            width: 90%;
+            margin: 20px;
+        }
+
+        h1 {
+            color: #4a6baf;
+            margin-bottom: 20px;
+            font-size: 2.2em;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 1.1em;
+            line-height: 1.6;
+        }
+
+        .btn {
+            display: inline-block;
+            background: #4a6baf;
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 1.1em;
+            transition: all 0.3s ease;
+            box-shadow: 0 4px 10px rgba(74, 107, 175, 0.3);
+        }
+
+        .btn:hover {
+            background: #3a5a9f;
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(74, 107, 175, 0.4);
+        }
+
+        .logo {
+            width: 80px;
+            margin-bottom: 20px;
+        }
+
+        /* Анимация */
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(20px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .container {
+            animation: fadeIn 0.8s ease-out;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Можно добавить логотип -->
+        <!-- <img src="https://via.placeholder.com/80" alt="Логотип" class="logo"> -->
+        
+        <h1>Оставьте заявку</h1>
+        <p>Пожалуйста, заполните форму, чтобы мы могли с вами связаться. Это займет всего пару минут!</p>
+        
+        <!-- Ссылка на вашу Google Forms -->
+        <a href="https://docs.google.com/forms/d/e/1FAIpQLSedxmsHQ6mi7B_F-OcGRHxePN-4rg57frem4Xg1IT3UX_D37g/viewform?usp=dialog" class="btn">Перейти к форме</a>
+        
+        <!-- Дополнительная информация (необязательно) -->
+        <p style="margin-top: 30px; font-size: 0.9em; color: #888;">
+            Если форма не открывается, <a href="https://docs.google.com/forms/d/e/1FAIpQLSedxmsHQ6mi7B_F-OcGRHxePN-4rg57frem4Xg1IT3UX_D37g/viewform?usp=dialog" style="color: #4a6baf;">нажмите здесь</a>.
+        </p>
+    </div>
+</body>
+</html>
